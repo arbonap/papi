@@ -37,11 +37,11 @@ end
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-# proxy product.yml files to product.html 
+# proxy product.yml files to product.html
 data.products.each do |_filename, product|
   # product is an array: [filename, {data}]
-  proxy "/product/#{product[:title].parameterize}/index.html", "product.html", 
-  locals: {product: product}, 
+  proxy "/product/#{product[:title].parameterize}/index.html", "product.html",
+  locals: {product: product},
   layout: 'product-detail',
   ignore: true
 end
@@ -58,7 +58,7 @@ helpers do
   def background_image(image)
     "background-image: url('" << image_path(image) << "')"
   end
-  
+
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " active" if url == current_page.url
