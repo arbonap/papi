@@ -12,7 +12,8 @@
 
   h1 {
     @extend %column;
-    @extend %col-xs-8;
+    @extend %col-xs-12;
+    color: rgba(255, 255, 255, 1);
     margin: 0;
     padding-top: 20%;
 
