@@ -70,7 +70,7 @@ const NavigationPreview = ({ entry }) => {
     <header className="header-primary">
       <div className="logo">
         <a href="/">
-          <img src="/images/logo.svg" alt="Kaldi"/>
+          ❤️
         </a>
       </div>
       <a className="nav-button">
@@ -89,7 +89,6 @@ const NavigationPreview = ({ entry }) => {
   )
 }
 
-CMS.registerPreviewTemplate('blog', BlogPreview)
 CMS.registerPreviewTemplate('product', ProductPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)

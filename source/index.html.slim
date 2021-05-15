@@ -1,5 +1,5 @@
 ---
-title: Kaldi - Middleman + Netlify CMS Example
+title: José Antonio Arbona Cortés, MD
 ---
 
 section.hero style=background_image(image_path(data.pages.home.hero.image))
@@ -16,7 +16,7 @@ section.homepage-story
 section.homepage-products.products
   .container
     h2
-      | Products
+      | Fotos
     .row
       //product is structured: ['filename', 'data']
       //sort by newest product
@@ -24,12 +24,3 @@ section.homepage-products.products
 
         //to get the actual data:
         = partial 'partials/products/product', locals: {product: product}
-
-section.homepage-news.news
-  .container
-    h2
-      | News
-    .news-items
-      //get the first two most recent posts
-      - blog.articles.first(2).each do | article |
-        = partial 'partials/news/news_item', locals: {article: article}
