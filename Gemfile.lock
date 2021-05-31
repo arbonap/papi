@@ -80,6 +80,8 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
+    middleman-disqus (1.2.0)
+      middleman-core (~> 4.0)
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -123,6 +125,7 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-blog
+  middleman-disqus
   middleman-livereload
   slim
   tzinfo-data

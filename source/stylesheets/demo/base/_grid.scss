@@ -2,13 +2,22 @@
   @extend %container;
 }
 
+.topcorner{
+   top: 68%;
+   right: 0;
+   position: absolute;
+   width: 50%;
+   padding: 10px;
+
+  }
+
 .container-fluid {
   @extend %container-fluid;
 }
 
 .row {
-  @extend %row;
-}
+  @extend %row;}
+
 
 %container {
   @include container-fixed;

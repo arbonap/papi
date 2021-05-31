@@ -31,6 +31,25 @@ activate :blog do |blog|
   blog.layout = "news-detail"
 end
 
+configure :development do
+  activate :disqus do |d|
+    # Two options in development
+
+    # Option 1: Use a special development shortname
+    d.shortname = "development-papi"
+
+    # Option 2: Disable Disqus in development
+    # d.shortname = nil
+  end
+end
+
+configure :build do
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "josearbona"
+  end
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
