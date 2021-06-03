@@ -20,6 +20,7 @@
     background-color: black;
     text-align: center;
     margin: 16px ​0px 0px 16px;
+    text-align: center;
     position: absolute;
     top: 80%;
     font-weight: bold;
@@ -30,10 +31,11 @@
     transition: opacity 2s ease-in;
 
     @media screen and (max-width: $screen-md-max){
-      padding-top: 15%;
+      padding-top: 0%;
     }
     @media screen and (max-width: $screen-xs-max){
-      padding-top: 10%;
+      padding-top: 0%;
+      top: 60%;
     }
   }
   @media screen and (max-width: 400px){
