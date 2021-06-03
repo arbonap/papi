@@ -1,9 +1,10 @@
 .hero {
   position: relative;
+  object-fit: fill;
   width: 100%;
   height: 0;
   padding-bottom: 42.1875%;
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   background-color: $background-secondary-color;
   .caption {
@@ -14,8 +15,19 @@
     @extend %column;
     @extend %col-xs-12;
     color: rgba(255, 255, 255, 1);
-    margin: 0;
-    padding-top: 20%;
+    text-shadow: 2px 2px gray;
+    opacity: 80%;
+    background-color: black;
+    text-align: center;
+    margin: 16px ​0px 0px 16px;
+    position: absolute;
+    top: 80%;
+    font-weight: bold;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 
     @media screen and (max-width: $screen-md-max){
       padding-top: 15%;
