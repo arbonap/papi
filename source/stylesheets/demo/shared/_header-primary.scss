@@ -19,6 +19,8 @@
         font-style: italic;
         opacity: 80%;
         text-shadow: 2px 2px gray;
+        position: relative;
+        left: 125px;
     }
     a {
         top: 0px;
@@ -26,7 +28,10 @@
     img {
         z-index: 999;
         position: relative;
-        top: -75px;
+        top: -155px;
+        left: -12px;
+        height: 200px;
+        width: 200px;
     }
   }
 

@@ -5,6 +5,7 @@ gem 'middleman-autoprefixer'
 gem 'middleman-blog'
 gem 'middleman-livereload'
 gem "middleman-disqus"
+gem 'font-awesome-sass'
 
 gem 'webrick'
 gem 'slim'

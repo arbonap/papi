@@ -27,6 +27,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.2.0)
     ffi (1.13.1)
+    font-awesome-sass (5.15.1)
+      sassc (>= 1.11)
     haml (5.2.1)
       temple (>= 0.8.0)
       tilt
@@ -122,6 +124,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-sass
   middleman
   middleman-autoprefixer
   middleman-blog
